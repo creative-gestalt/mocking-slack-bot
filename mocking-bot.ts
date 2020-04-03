@@ -9,7 +9,6 @@ const web = new WebClient(BOT_TOKEN);
 const {users} = require('./models');
 const app = require('express')();
 const http = require('http');
-let response = {};
 let result = '';
 
 app.use('/slack/actions', slackInteractions.expressMiddleware());

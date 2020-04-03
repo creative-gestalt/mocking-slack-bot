@@ -9,8 +9,8 @@ exports.users = {
             this.accepted = isAccept;
             return resolveLater(this);
         },
-        findBySlackId() {
-            return resolveLater(this.staticUser, 50);
-        }
+    },
+    findBySlackId() {
+        return resolveLater(this.staticUser, 50);
     }
-}
+};
